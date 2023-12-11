@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+  <link rel="stylesheet" href="./stylesheets/chat.css">
+
+  <title>Chat</title>
+</head>
+<body>
+  <h1>Community Chat</h1>
+  <div id="messages-container">
+    <ul id="messages"></ul>
+</div>
+  <form id="form" action="">
+    <input id="m" autocomplete="off" />
+    <button type="button" onclick="sendMessage()">Send</button>
+  </form>
+  <br>  
+  <button type="button" onclick="goToProfile()">Profile</button>
+  <br>
+  <button type="button" onclick="goToPrivate()">Private</button>
+
+  <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+<script src='./javascripts/chat.js'></script>
+<script src='./javascripts/goToProfile.js'></script>
+<script src='./javascripts/goToPrivate.js'></script>
+</body>
+</html>

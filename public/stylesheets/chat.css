@@ -1,0 +1,65 @@
+/* public/stylesheets/chat.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Dikeyde boşluğu paylaştır */
+    min-height: 100vh; /* Min-height kullanarak sayfa boyunun tamamını kaplamasını sağla */
+    max-height: 100vh;
+}
+
+h1 {
+    color: #333;
+}
+
+#messages {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    max-width: 400px;
+    overflow-y: auto;
+    flex-grow: 1; /* Mesajların gösterildiği alanın esnek büyümesini sağla */
+
+}
+#messages-container {
+    max-height: 70vh; /* Örnek olarak belirtilen bir değer */
+    overflow-y: auto;
+    flex-grow: 1;
+}
+#messages li {
+    background-color: #e6e6e6;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 8px;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto; /* Formun alt kısmına yerleştir */
+}
+
+#m {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

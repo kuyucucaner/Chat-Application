@@ -1,0 +1,20 @@
+
+# .gitignore
+
+# Veritabanı bağlantı bilgilerini içeren .env dosyasını yoksay
+.env
+
+# Derleme sonuçlarını (genellikle "node_modules/" veya "vendor/" dizinleri) yoksay
+node_modules/
+vendor/
+
+# IDE veya metin düzenleyici özel dosyalarını yoksay
+.idea/
+.vscode/
+
+# Log dosyalarını yoksay
+*.log
+
+# Geçici dosyaları yoksay
+*.tmp
+*.temp

@@ -1,0 +1,25 @@
+<!-- views/profile.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesheets/profile.css">
+
+    <title>User Profile</title>
+</head>
+<body>
+    <h1>Welcome to Your Profile</h1>
+
+    <div>
+        <p><strong>Username:</strong> <%= user.userName %></p>
+        <p><strong>Firstname:</strong> <%= user.firstName %></p>
+        <p><strong>Lastname:</strong> <%= user.lastName %></p>
+        <p><strong>Email:</strong> <%= user.email %></p>
+        <button type="button" onclick="goToChat()">Chat</button>
+    </div>
+    <script src='./javascripts/goToChat.js'></script>
+
+</body>
+</html>

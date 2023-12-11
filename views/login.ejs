@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./stylesheets/login.css">
+  <title>Login</title>
+</head>
+
+<body>
+  <form action="/login" method="POST">
+    <label for="userName">User Name:</label>
+    <input type="text" id="userName" name="userName" required>
+    <br><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <br><br>
+    <button type="submit">Log in</button>
+    <button type="button" onclick="goToRegister()">Register</button>
+  </form>
+</body>
+<script src='./javascripts/goToRegister.js'></script>
+</html>
