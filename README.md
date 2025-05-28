@@ -1,5 +1,5 @@
 # 💬 Chat Application
-
+ 
 **Chat Application** is a real-time messaging app built using Socket.IO. After registering and logging in, users can communicate instantly with each other through a clean and simple interface.
 
 ---
